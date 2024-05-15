@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Filament\Resources\BannerResource\Pages;
+namespace App\Filament\Resources\MakamResource\Pages;
 
-use App\Filament\Resources\BannerResource;
+use App\Filament\Resources\MakamResource;
 use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
 
-class EditBanner extends EditRecord
+class EditMakam extends EditRecord
 {
-    protected static string $resource = BannerResource::class;
+    protected static string $resource = MakamResource::class;
 
     protected function getHeaderActions(): array
     {

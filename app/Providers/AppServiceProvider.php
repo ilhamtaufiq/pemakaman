@@ -6,6 +6,8 @@ use Filament\Tables\Actions\Action;
 use Filament\Tables\Enums\FiltersLayout;
 use Filament\Tables\Table;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Database\Eloquent\Model;
+
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -31,5 +33,6 @@ class AppServiceProvider extends ServiceProvider
                 ->extremePaginationLinks()
                 ->defaultSort('created_at', 'desc');
         });
+        Model::unguard();
     }
 }

@@ -32,6 +32,7 @@
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8",
         "riodwanto/filament-ace-editor": "^1.0",
+        "simplesoftwareio/simple-qrcode": "^4.2",
         "z3d0x/filament-logger": "^0.6.3"
     },
     "require-dev": {

@@ -71,6 +71,7 @@ class UserResource extends Resource
                             ->schema([
                                 Select::make('roles')->label('Role')
                                     ->hiddenLabel()
+                                    ->multiple()
                                     ->relationship('roles', 'name')
                                     ->getOptionLabelFromRecordUsing(fn (Model $record) => Str::headline($record->name))
                                     ->native(false),
