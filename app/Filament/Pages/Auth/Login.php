@@ -8,15 +8,15 @@ use Illuminate\Contracts\Support\Htmlable;
 
 class Login extends BasePage
 {
-    public function mount(): void
-    {
-        parent::mount();
+    //public function mount(): void
+    //{
+        //parent::mount();
 
-        $this->form->fill([
-            'email' => 'superadmin@starter-kit.com',
-            'password' => 'superadmin',
-        ]);
-    }
+        //$this->form->fill([
+            //'email' => 'superadmin@starter-kit.com',
+            //'password' => 'superadmin',
+        //]);
+    //}
 
     public function form(Form $form): Form
     {
