@@ -7,8 +7,8 @@ use Filament\Tables\Enums\FiltersLayout;
 use Filament\Tables\Table;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Model;
-
-
+use Livewire\Livewire;
+use Route;
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -34,5 +34,11 @@ class AppServiceProvider extends ServiceProvider
                 ->defaultSort('created_at', 'desc');
         });
         Model::unguard();
+	Livewire::setScriptRoute(function ($handle) {
+    		return Route::get('/pemakaman/livewire/livewire.js', $handle);
+	});
+	Livewire::setUpdateRoute(function ($handle) {
+    		return Route::post('/pemakaman/livewire/update', $handle);
+	});
     }
 }
