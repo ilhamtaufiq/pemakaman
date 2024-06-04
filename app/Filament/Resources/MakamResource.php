@@ -164,7 +164,7 @@ class MakamResource extends Resource
                 Tables\Actions\EditAction::make()->hiddenLabel()->tooltip('Edit'),
                 Tables\Actions\DeleteAction::make()->hiddenLabel()->tooltip('Delete'),
                 Tables\Actions\Action::make('QrCode')
-                ->url( fn (Makam $record): string => "/makam/qr?id=".$record->id, )
+                ->url( fn (Makam $record): string => "/pemakaman/makam/qr?id=".$record->id, )
                 ->hiddenLabel()
                 ->tooltip('Print QR Code')
                 ->icon('heroicon-o-qr-code'),
