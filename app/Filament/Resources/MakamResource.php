@@ -193,4 +193,10 @@ class MakamResource extends Resource
             'edit' => Pages\EditMakam::route('/{record}/edit'),
         ];
     }
+    public static function getWidgets(): array
+{
+    return [
+        MakamResource\Widgets\totalMakam::class,
+    ];
+}
 }
